@@ -1,5 +1,13 @@
 #déclaration par l'utilisateur de la longueur du mot recherché
-longueur = int(input("Entrez la longueur du mot recherché : "))
+from curses.ascii import isdigit
+
+
+longueur = input("Entrez la longueur du mot recherché : ")
+
+#vérification que ce soit un nombre
+while longueur.isdigit() == False:
+    longueur = input("Ce n'est pas un nombre, veuillez entrer un nombre :")
+longueur = int(longueur)
 
 #ouverture du fichier
 fichier = open("/home/thomas/Documents/La_plateforme/git/starter-python/data.txt", "r") #en mode lecture

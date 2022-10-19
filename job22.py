@@ -1,7 +1,4 @@
 #fonction pour mettre en majuscule
-from unittest import result
-
-
 def myUpper(phrase):
     alphabet = 'abcdefghijklmnopqrstuvwxyzàâéèêëîïABCDEFGHIJKLMNOPQRSTUVWXYZAAEEEEII'
     result = ""
@@ -45,12 +42,12 @@ def myClean(phrase):
     return result
 
 texte = input("Entrez un phrase : ")
-param = input("Entrez un paramètre parmis : \n-upper \nlower \ntitle \nclean \nvotre sélection :")
+param = input("Entrez un paramètre parmis : \n-upper \n-lower \n-title \n-clean \nvotre sélection :")
 
 
 while param != "upper" and param != "lower" and param != "title" and param != "clean":
     print("Paramètre invalide")
-    param = input("Entrez un paramètre parmis : \n-upper \nlower \ntitle \nclean \nvotre sélection :")
+    param = input("\nEntrez un paramètre parmis : \n-upper \n-lower \n-title \n-clean \nvotre sélection :")
 
 
 if param == "upper":

@@ -1,4 +1,8 @@
-# def croissant(*args):
+######################################################
+#méthode avec varaible de décision
+######################################################
+
+#  def croissant(*args):
 #     myList = []
 #     for i in args:
 #         myList.append(i)
